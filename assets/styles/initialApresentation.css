@@ -24,6 +24,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .initial-apresentation .container div.redes div svg {
@@ -83,14 +84,7 @@
   animation-iteration-count: 1;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dashoffset: 440;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
+
 
 .initial-apresentation .container div.redes ion-icon {
   cursor: pointer;
@@ -99,7 +93,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.initial-apresentation .container div.redes ion-icon:hover {
+.initial-apresentation .container div.redes div:hover ion-icon {
   color: var(--primary);
   font-size: 55px;
 }

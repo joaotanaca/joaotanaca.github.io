@@ -1,0 +1,45 @@
+.animations {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.animations .animation {
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.animations .pokejs {
+  background-image: url(/assets/images/pokejs.webp);
+  left: 0px;
+  bottom: -100px;
+  animation: animationPokejs 7s normal infinite;
+}
+
+.animations .react {
+  background-image: url(/assets/images/react.webp);
+  left: -100px;
+  bottom: 50%;
+  animation: animationReact 7s 4s infinite normal;
+}
+
+.animations .hooks {
+  background-image: url(/assets/images/React-hooks.webp);
+  top: 50%;
+  right: -100px;
+  animation: animationHooks 7s 7s infinite normal;
+}
+
+.animations .jstest {
+  background-image: url(/assets//images/jstesting_basics.webp);
+  top: -100px;
+  right: 100%;
+  animation: animationJstest 7s 10s infinite normal;
+}
+

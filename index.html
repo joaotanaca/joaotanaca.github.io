@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portifólio João Tanaca" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;600;700&family=Sora:wght@100;300;500;700&display=swap"
       rel="stylesheet"
@@ -11,6 +12,14 @@
     <link rel="stylesheet" href="/assets/styles/index.css" />
     <script src="/assets/scripts/switch-theme.js"></script>
     <script src="/assets/scripts/loadLink.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>João Tanaca</title>
   </head>
   <body>
@@ -21,7 +30,7 @@
         </h3>
         <ul>
           <li>
-            <a href="#">Pagina inicial</a>
+            <a href="#home">Pagina inicial</a>
           </li>
           <li>
             <a href="#">Sobre</a>
@@ -37,44 +46,47 @@
         </ul>
       </div>
     </nav>
-    <div class="initial-apresentation">
-      <div class="animations"></div>
+    <div class="initial-apresentation" id="#home">
+      <div class="animations">
+        <div class="animation pokejs"></div>
+        <div class="animation react"></div>
+        <div class="animation hooks"></div>
+        <div class="animation jstest"></div>
+      </div>
       <div class="container">
         <h1>
           Codenome: Tanaca<br />
           Função: Front-end
         </h1>
         <div class="redes">
-          <div class="linkedin">
+          <div
+            class="linkedin"
+            href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
+            onclick="clickLink(this)"
+            onmouseenter="loadLink(this)"
+            onmouseout="clearTimeOut()"
+          >
             <svg height="100" width="100">
               <circle cx="50" cy="50" r="40" />
               <circle class="progress" cx="50" cy="50" r="40" />
             </svg>
-            <ion-icon
-              name="logo-linkedin"
-              href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
-              onclick="clickLink(this)"
-              onmouseenter="loadLink(this)"
-              onmouseout="clearTimeOut()"
-            >
-            </ion-icon>
+            <ion-icon name="logo-linkedin"> </ion-icon>
           </div>
-          <div class="github">
+          <div
+            class="github"
+            href="https://github.com/joaotanaca"
+            onclick="clickLink(this)"
+            onmouseenter="loadLink(this)"
+            onmouseout="clearTimeOut()"
+          >
             <svg height="100" width="100">
               <circle cx="50" cy="50" r="40" />
               <circle class="progress" cx="50" cy="50" r="40" />
             </svg>
-            <ion-icon
-              name="logo-github"
-              href="https://github.com/joaotanaca"
-              onclick="clickLink(this)"
-              onmouseenter="loadLink(this)"
-              onmouseout="clearTimeOut()"
-            ></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
 </html>

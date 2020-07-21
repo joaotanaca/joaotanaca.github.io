@@ -1,0 +1,116 @@
+/* Animação Navbar */
+@keyframes quickSwitchOn {
+  0% {
+    left: -5px;
+  }
+  25% {
+    left: 10px;
+  }
+  50% {
+    left: 20px;
+  }
+  75% {
+    left: 10px;
+  }
+  100% {
+    left: 23px;
+  }
+}
+
+@keyframes quickSwitchOff {
+  0% {
+    left: 20px;
+  }
+  25% {
+    left: 10px;
+  }
+  50% {
+    left: 5px;
+  }
+  75% {
+    left: 10px;
+  }
+  100% {
+    left: 0.9px;
+  }
+}
+
+/* Animação de progresso dos link - home */
+@keyframes progress {
+  0% {
+    stroke-dashoffset: 440;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animações home */
+@keyframes animationPokejs {
+  20% {
+    bottom: -100px;
+  }
+  50% {
+    bottom: 50%;
+  }
+  75% {
+    left: 50%;
+    bottom: 25%;
+  }
+
+  100% {
+    left: calc(100% + 100px);
+  }
+}
+
+@keyframes animationReact {
+  20% {
+    left: 10%;
+  }
+  50% {
+    left: 70%;
+  }
+  75% {
+    left: 90%;
+    bottom: 80%;
+  }
+
+  100% {
+    left: calc(100% + 100px);
+  }
+}
+
+@keyframes animationHooks {
+  20% {
+    right: 70%;
+  }
+  50% {
+    right: 50%;
+    top: 20%;
+  }
+  75% {
+    top: 50%;
+    right: 90%;
+  }
+
+  100% {
+    right: calc(100% + 100px);
+  }
+}
+/* top: -100px; */
+/* right: 100%; */
+@keyframes animationJstest {
+  25% {
+    top: 10%;
+    right: 90%;
+  }
+  50% {
+    top: 20%;
+  }
+  75% {
+    right: 70%;
+  }
+  100% {
+    top: calc(100% + 100px);
+  }
+}
