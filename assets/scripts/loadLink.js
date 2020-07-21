@@ -8,7 +8,10 @@ function loadLink(element = new Element()) {
 }
 
 function clearTimeOut() {
-  console.log(timeoutId);
   clearTimeout(timeoutId);
   event.preventDefault();
+}
+
+function clickLink(element = new Element()) {
+  window.open(element.getAttribute("href"));
 }

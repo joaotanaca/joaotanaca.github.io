@@ -11,19 +11,95 @@
   justify-content: center;
   align-items: center;
 }
-.initial-apresentation .container div {
+.initial-apresentation .container div.redes {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
   position: absolute;
   bottom: 60px;
 }
 
-.initial-apresentation .container div ion-icon {
+.initial-apresentation .container div.redes div {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.initial-apresentation .container div.redes div svg {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-90deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.initial-apresentation .container div.redes div:hover svg {
+  opacity: 1;
+}
+
+.initial-apresentation .container div.redes div svg circle {
+  stroke: var(--text);
+  fill: transparent;
+  stroke-width: 5;
+}
+
+.initial-apresentation .container div.redes div.linkedin svg circle.progress {
+  stroke: var(--secondary);
+  stroke-width: 3px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.initial-apresentation
+  .container
+  div.redes
+  div.linkedin:hover
+  svg
+  circle.progress {
+  animation-name: progress;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+.initial-apresentation .container div.redes div.github svg circle.progress {
+  stroke: var(--secondary);
+  stroke-width: 3px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.initial-apresentation
+  .container
+  div.redes
+  div.github:hover
+  svg
+  circle.progress {
+  animation-name: progress;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dashoffset: 440;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.initial-apresentation .container div.redes ion-icon {
   cursor: pointer;
   font-size: 50px;
   margin: 0 20px;
   transition: all 0.3s ease-in-out;
 }
 
-.initial-apresentation .container div ion-icon:hover {
+.initial-apresentation .container div.redes ion-icon:hover {
   color: var(--primary);
-  font-size: 60px;
+  font-size: 55px;
 }
