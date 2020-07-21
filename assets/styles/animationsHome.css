@@ -13,6 +13,14 @@
   width: 100px;
   height: 100px;
   position: absolute;
+  text-align: center;
+}
+
+.animations .animation h5 {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  color: #fff;
 }
 
 .animations .pokejs {
@@ -42,4 +50,3 @@
   right: 100%;
   animation: animationJstest 7s 10s infinite normal;
 }
-

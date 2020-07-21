@@ -49,9 +49,15 @@
     <div class="initial-apresentation" id="#home">
       <div class="animations">
         <div class="animation pokejs"></div>
-        <div class="animation react"></div>
-        <div class="animation hooks"></div>
-        <div class="animation jstest"></div>
+        <div class="animation react">
+          <h5>Single page applications</h5>
+        </div>
+        <div class="animation hooks">
+          <h5>React hooks</h5>
+        </div>
+        <div class="animation jstest">
+          <h5>Jest</h5>
+        </div>
       </div>
       <div class="container">
         <h1>
@@ -59,31 +65,32 @@
           Função: Front-end
         </h1>
         <div class="redes">
-          <div
-            class="linkedin"
-            href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
-            onclick="clickLink(this)"
-            onmouseenter="loadLink(this)"
-            onmouseout="clearTimeOut()"
-          >
+          <div id="linkedin" class="linkedin">
             <svg height="100" width="100">
               <circle cx="50" cy="50" r="40" />
               <circle class="progress" cx="50" cy="50" r="40" />
             </svg>
-            <ion-icon name="logo-linkedin"> </ion-icon>
+            <ion-icon
+              name="logo-linkedin"
+              href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
+              onclick="clickLink(this)"
+              onmouseenter="loadLink(this)"
+              onmouseout="clearTimeOut()"
+            >
+            </ion-icon>
           </div>
-          <div
-            class="github"
-            href="https://github.com/joaotanaca"
-            onclick="clickLink(this)"
-            onmouseenter="loadLink(this)"
-            onmouseout="clearTimeOut()"
-          >
+          <div class="github">
             <svg height="100" width="100">
               <circle cx="50" cy="50" r="40" />
               <circle class="progress" cx="50" cy="50" r="40" />
             </svg>
-            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon
+              name="logo-github"
+              href="https://github.com/joaotanaca"
+              onclick="clickLink(this)"
+              onmouseenter="loadLink(this)"
+              onmouseout="clearTimeOut()"
+            ></ion-icon>
           </div>
         </div>
       </div>
