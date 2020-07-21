@@ -10,6 +10,7 @@
     <link id="theme" rel="stylesheet" href="/assets/styles/light.css" />
     <link rel="stylesheet" href="/assets/styles/index.css" />
     <script src="/assets/scripts/switch-theme.js"></script>
+    <script src="/assets/scripts/loadLink.js"></script>
     <title>João Tanaca</title>
   </head>
   <body>
@@ -20,13 +21,13 @@
         </h3>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#">Pagina inicial</a>
           </li>
           <li>
-            <a href="#">Portifolio</a>
+            <a href="#">Sobre</a>
           </li>
           <li>
-            <a href="#">Curso</a>
+            <a href="#">Habilidades</a>
           </li>
           <li>
             <button id="switch" onclick="switchMode()">
@@ -36,5 +37,29 @@
         </ul>
       </div>
     </nav>
+    <div class="initial-apresentation">
+      <div class="animations"></div>
+      <div class="container">
+        <h1>
+          Codenome: Tanaca<br />
+          Função: Front-end
+        </h1>
+        <div>
+          <ion-icon
+            name="logo-linkedin"
+            href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
+            onmouseenter="loadLink(this)"
+            onmouseout="clearTimeOut()"
+          ></ion-icon>
+          <ion-icon
+            name="logo-github"
+            href="https://github.com/joaotanaca"
+            onmouseenter="loadLink(this)"
+            onmouseout="clearTimeOut()"
+          ></ion-icon>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
 </html>

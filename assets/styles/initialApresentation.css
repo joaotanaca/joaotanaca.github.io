@@ -1,0 +1,29 @@
+.initial-apresentation {
+  background-color: rgba(var(--bg-rgb-color), 0.7);
+  position: relative;
+}
+
+.initial-apresentation .container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.initial-apresentation .container div {
+  position: absolute;
+  bottom: 60px;
+}
+
+.initial-apresentation .container div ion-icon {
+  cursor: pointer;
+  font-size: 50px;
+  margin: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.initial-apresentation .container div ion-icon:hover {
+  color: var(--primary);
+  font-size: 60px;
+}

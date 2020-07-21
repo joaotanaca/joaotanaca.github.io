@@ -1,8 +1,12 @@
+@import "navbar.css";
+@import "initialApresentation.css";
+
 body {
   background-color: var(--bg-body);
   color: var(--text);
   margin: 0;
   padding: 0;
+  padding-top: 70px;
   /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Sora", sans-serif;
@@ -13,132 +17,4 @@ body {
   max-width: 1080px;
   width: calc(100% - 40px);
   margin: 0 auto;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  background-color: var(--bg-color);
-  box-shadow: var(--shadow);
-}
-
-nav h3 {
-  font-size: 24px;
-  font-weight: 500;
-}
-
-nav .container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-weight: 500;
-}
-
-nav ul li {
-  margin-right: 15px;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-  margin-left: 5px;
-}
-
-nav ul li a {
-  all: unset;
-  cursor: pointer;
-  font-size: 17px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: var(--text-hover);
-}
-
-nav ul li button {
-  all: unset;
-  position: relative;
-  cursor: pointer;
-  width: 40px;
-  height: 17px;
-  border-radius: 50px;
-  border: 2px solid var(--text);
-  transform: rotateZ(-25deg);
-  transition: all 0.5s ease-in-out;
-}
-
-nav ul li button.active {
-  transform: rotateZ(25deg);
-}
-
-nav ul li button span {
-  width: 16px;
-  height: 16px;
-  background-color: var(--text);
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -52%);
-  left: 0.9px;
-}
-
-nav ul li button.active span {
-  animation-name: quickSwitchOn;
-  animation-duration: 0.8s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  left: 23px;
-}
-
-nav ul li button.desactived span {
-  animation-name: quickSwitchOff;
-  animation-duration: 0.8s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-}
-
-@keyframes quickSwitchOn {
-  0% {
-    left: -5px;
-  }
-  25% {
-    left: 10px;
-  }
-  50% {
-    left: 20px;
-  }
-  75% {
-    left: 10px;
-  }
-  100% {
-    left: 23px;
-  }
-}
-
-@keyframes quickSwitchOff {
-  0% {
-    left: 20px;
-  }
-  25% {
-    left: 10px;
-  }
-  50% {
-    left: 5px;
-  }
-  75% {
-    left: 10px;
-  }
-  100% {
-    left: 0.9px;
-  }
 }

@@ -9,7 +9,10 @@ const { dark, light } = {
 
 function switchMode() {
   const button = document.querySelector("#switch");
-  button.className = button.className === "" ? "active" : "desactived";
+  button.className =
+    button.className === "" || button.className === "desactived"
+      ? "active"
+      : "desactived";
   setTheme();
 }
 
