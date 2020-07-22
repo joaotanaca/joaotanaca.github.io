@@ -113,3 +113,13 @@
     top: calc(100% + 100px);
   }
 }
+
+/* Seção sobre */
+@keyframes rotateXp {
+  to {
+    transform: rotateZ(0deg);
+  }
+  from {
+    transform: rotateZ(360deg);
+  }
+}

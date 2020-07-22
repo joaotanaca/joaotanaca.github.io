@@ -30,7 +30,7 @@
 
 #sobre .apresentation .menu ul li h4 {
   margin: 0;
-  padding: 20px 25px 30px;
+  padding: 30px 25px;
 }
 
 #sobre .apresentation .message-container {
@@ -51,15 +51,28 @@
 }
 
 #sobre .apresentation .message-container .message .message-apresentation {
-  background-image: url(/assets/images/skills.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   border-left: 1px solid var(--bg-body);
   flex: 1;
   position: relative;
 }
-#sobre .apresentation .message-container .message .message-apresentation::before {
+
+#sobre
+  .apresentation
+  .message-container
+  .message
+  .message-apresentation
+  ion-icon {
+  width: 100%;
+  height: 100%;
+  animation: rotateXp 6s infinite normal;
+}
+
+#sobre
+  .apresentation
+  .message-container
+  .message
+  .message-apresentation
+  .block {
   top: 0;
   position: absolute;
   width: 100%;
