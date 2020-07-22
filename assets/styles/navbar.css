@@ -7,6 +7,7 @@ nav {
   display: flex;
   background-color: var(--bg-color);
   box-shadow: var(--shadow);
+  z-index: 100;
 }
 
 nav .container {
@@ -40,6 +41,10 @@ nav ul li a {
   cursor: pointer;
   font-size: 17px;
   transition: all 0.3s ease;
+}
+
+nav ul li a:visited {
+  color: inherit;
 }
 
 nav ul li a:hover {

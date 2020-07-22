@@ -6,17 +6,22 @@
 .initial-apresentation .container {
   width: 100%;
   height: calc(100vh - 70px);
-  position: relative;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+
+.initial-apresentation .container h1 {
+  margin-top: auto;
+}
+
 .initial-apresentation .container div.redes {
   width: 200px;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
-  bottom: 60px;
+  margin-top: auto;
+  margin-bottom: 50px;
 }
 
 .initial-apresentation .container div.redes div {
@@ -83,8 +88,6 @@
   animation-direction: normal;
   animation-iteration-count: 1;
 }
-
-
 
 .initial-apresentation .container div.redes ion-icon {
   cursor: pointer;

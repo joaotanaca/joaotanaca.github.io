@@ -2,6 +2,11 @@
 @import "initialApresentation.css";
 @import "animationsHome.css";
 @import "keyframes.css";
+@import "about.css";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--bg-body);
@@ -13,7 +18,6 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Sora", sans-serif;
   transition: all 0.4s ease-in-out;
-  scroll-behavior: smooth;
 }
 
 .container {

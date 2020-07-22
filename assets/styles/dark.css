@@ -1,6 +1,7 @@
 :root {
   --bg-body: #1d1d1d;
   --bg-color: #121212;
+  --bg-rgb-color: 0, 0, 0;
   --text: #ffffff;
   --primary: #5e92f3;
   --secondary: #003c8f;

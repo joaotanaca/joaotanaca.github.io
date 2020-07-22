@@ -1,0 +1,82 @@
+#sobre {
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+#sobre .container .apresentation {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+#sobre .container {
+  height: 100%;
+}
+
+#sobre .apresentation .menu {
+  width: 100%;
+}
+
+#sobre .apresentation .menu ul {
+  all: unset;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#sobre .apresentation .menu ul li {
+  list-style: none;
+}
+
+#sobre .apresentation .menu ul li h4 {
+  margin: 0;
+  padding: 20px 25px 30px;
+}
+
+#sobre .apresentation .message-container {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text);
+  width: 100%;
+  height: 100%;
+  margin: 0 0 10px;
+  border-radius: 10px;
+}
+
+#sobre .apresentation .message-container .message {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+
+#sobre .apresentation .message-container .message .message-apresentation {
+  background-image: url(/assets/images/skills.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-left: 1px solid var(--bg-body);
+  flex: 1;
+  position: relative;
+}
+#sobre .apresentation .message-container .message .message-apresentation::before {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--bg-rgb-color), 0.7);
+}
+#sobre .apresentation .message-container .display-message {
+  width: 50%;
+  height: 100%;
+  background-color: var(--bg-body);
+  position: absolute;
+  opacity: 0;
+}
+
+#sobre .apresentation .message-container .display-message.ensino {
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+  opacity: 1;
+}
