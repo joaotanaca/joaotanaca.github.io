@@ -53,7 +53,19 @@
 #sobre .apresentation .message-container .message .message-apresentation {
   border-left: 1px solid var(--bg-body);
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+#sobre
+  .apresentation
+  .message-container
+  .message
+  .message-apresentation.active {
+  flex: 2;
 }
 
 #sobre
@@ -62,8 +74,16 @@
   .message
   .message-apresentation
   ion-icon {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+}
+
+#sobre
+  .apresentation
+  .message-container
+  .message
+  .message-apresentation
+  ion-icon.xp-react {
   animation: rotateXp 6s infinite normal;
 }
 
@@ -77,19 +97,37 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(var(--bg-rgb-color), 0.7);
+  background-color: rgba(var(--bg-rgb-color), 0.5);
 }
-#sobre .apresentation .message-container .display-message {
+
+#sobre .apresentation .message-container .messages {
   width: 50%;
   height: 100%;
   background-color: var(--bg-body);
   position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 
-#sobre .apresentation .message-container .display-message.ensino {
+#sobre .apresentation .message-container .messages.active {
+  opacity: 1;
+}
+
+#sobre .apresentation .message-container .messages.about-me {
+  left: 0;
+  z-index: 100;
+}
+
+#sobre .apresentation .message-container .messages.book {
   left: 50%;
   transform: translate(-50%);
   z-index: 100;
-  opacity: 1;
+}
+
+#sobre .apresentation .message-container .messages.xp {
+  left: 100%;
+  transform: translate(-100%);
+  z-index: 100;
 }

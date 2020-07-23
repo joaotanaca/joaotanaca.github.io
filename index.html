@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portifólio João Tanaca" />
     <link
+      async
+      defer
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;600;700&family=Sora:wght@100;300;500;700&display=swap"
       rel="stylesheet"
     />
@@ -12,6 +14,7 @@
     <link rel="stylesheet" href="/assets/styles/index.css" />
     <script src="/assets/scripts/switch-theme.js"></script>
     <script src="/assets/scripts/loadLink.js"></script>
+    <script src="/assets/scripts/menuAbout.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
@@ -101,25 +104,50 @@
           <div class="menu">
             <ul>
               <li>
-                <h4>Sobre mim</h4>
+                <h4
+                  target="about-me"
+                  onmouseenter="menuOpenMessage(this)"
+                  onmouseout="removeMessage(this)"
+                >
+                  Sobre mim
+                </h4>
               </li>
               <li>
-                <h4>Ensino</h4>
+                <h4
+                  target="book"
+                  onmouseenter="menuOpenMessage(this)"
+                  onmouseout="removeMessage(this)"
+                >
+                  Ensino
+                </h4>
               </li>
               <li>
-                <h4>Experiência</h4>
+                <h4
+                  target="xp"
+                  onmouseenter="menuOpenMessage(this)"
+                  onmouseout="removeMessage(this)"
+                >
+                  Experiência
+                </h4>
               </li>
             </ul>
           </div>
           <div class="message-container">
             <div class="message">
-              <div class="message-apresentation"></div>
-              <div class="message-apresentation"></div>
-              <div class="message-apresentation">
-                <ion-icon name="logo-react"></ion-icon>
+              <div class="message-apresentation" id="about-me">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+                <div class="block"></div>
+              </div>
+              <div class="message-apresentation" id="book">
+                <ion-icon name="book-outline"></ion-icon>
+                <div class="block"></div>
+              </div>
+              <div class="message-apresentation" id="xp">
+                <ion-icon name="logo-react" class="xp-react"></ion-icon>
+                <div class="block"></div>
               </div>
             </div>
-            <div class="display-message"></div>
+            <div class="messages" id="display-message"></div>
           </div>
         </div>
       </div>
