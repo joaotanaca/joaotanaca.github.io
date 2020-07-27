@@ -3,6 +3,7 @@
 @import "animationsHome.css";
 @import "keyframes.css";
 @import "about.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;600;700&family=Sora:wght@100;300;500;700&display=swap");
 
 html {
   scroll-behavior: smooth;
