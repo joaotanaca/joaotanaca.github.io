@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portifólio João Tanaca" />
-    <link id="theme" rel="stylesheet" href="/assets/styles/light.css" />
-    <link rel="stylesheet" href="/assets/styles/index.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
-    ></script>
-    <title>João Tanaca</title>
-  </head>
-  <body>
-    <nav>
-      <div class="container">
-        <h3>
-          Tanaca
-        </h3>
-        <ul>
-          <li>
-            <a href="#">Pagina inicial</a>
-          </li>
-          <li>
-            <a href="#sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="#">Habilidades</a>
-          </li>
-          <li>
-            <button id="switch" onclick="switchMode()">
-              <span></span>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="initial-apresentation">
-      <div class="animations">
-        <div class="animation pokejs"></div>
-        <div class="animation react">
-          <h5>Single page applications</h5>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portifólio João Tanaca" />
+        <link id="theme" rel="stylesheet" href="/assets/styles/light.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+        ></script>
+        <title>João Tanaca</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script
+            src="/assets/scripts/generateAbilities.js"
+            type="text/babel"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <div class="container-internal flex justify-between items-center">
+                <h3 class="text-xl">Tanaca</h3>
+                <ul>
+                    <li>
+                        <a href="#">Pagina inicial</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Habilidades</a>
+                    </li>
+                    <li>
+                        <button id="switch" onclick="switchMode()">
+                            <span></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="initial-apresentation">
+            <div class="animations">
+                <div class="animation pokejs"></div>
+                <div class="animation react">
+                    <h5>Single page applications</h5>
+                </div>
+                <div class="animation hooks">
+                    <h5>React hooks</h5>
+                </div>
+                <div class="animation jstest">
+                    <h5>Jest</h5>
+                </div>
+            </div>
+            <div class="container mx-auto">
+                <h1 class="text-4xl">
+                    Codenome: Tanaca<br />
+                    Função: Front-end
+                </h1>
+                <div class="redes">
+                    <div id="linkedin" class="linkedin">
+                        <svg height="100" width="100">
+                            <circle cx="50" cy="50" r="40" />
+                            <circle class="progress" cx="50" cy="50" r="40" />
+                        </svg>
+                        <ion-icon
+                            name="logo-linkedin"
+                            href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
+                            onclick="clickLink(this)"
+                            onmouseenter="loadLink(this)"
+                            onmouseout="clearTimeOut()"
+                        >
+                        </ion-icon>
+                    </div>
+                    <div class="github">
+                        <svg height="100" width="100">
+                            <circle cx="50" cy="50" r="40" />
+                            <circle class="progress" cx="50" cy="50" r="40" />
+                        </svg>
+                        <ion-icon
+                            name="logo-github"
+                            href="https://github.com/joaotanaca"
+                            onclick="clickLink(this)"
+                            onmouseenter="loadLink(this)"
+                            onmouseout="clearTimeOut()"
+                        ></ion-icon>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="animation hooks">
-          <h5>React hooks</h5>
-        </div>
-        <div class="animation jstest">
-          <h5>Jest</h5>
-        </div>
-      </div>
-      <div class="container">
-        <h1>
-          Codenome: Tanaca<br />
-          Função: Front-end
-        </h1>
-        <div class="redes">
-          <div id="linkedin" class="linkedin">
-            <svg height="100" width="100">
-              <circle cx="50" cy="50" r="40" />
-              <circle class="progress" cx="50" cy="50" r="40" />
-            </svg>
-            <ion-icon
-              name="logo-linkedin"
-              href="https://linkedin.com/in/jo%C3%A3o-pedro-tanaca-ramos/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVseLtMfWQimKPfPhKMVx2w%3D%3D"
-              onclick="clickLink(this)"
-              onmouseenter="loadLink(this)"
-              onmouseout="clearTimeOut()"
-            >
-            </ion-icon>
-          </div>
-          <div class="github">
-            <svg height="100" width="100">
-              <circle cx="50" cy="50" r="40" />
-              <circle class="progress" cx="50" cy="50" r="40" />
-            </svg>
-            <ion-icon
-              name="logo-github"
-              href="https://github.com/joaotanaca"
-              onclick="clickLink(this)"
-              onmouseenter="loadLink(this)"
-              onmouseout="clearTimeOut()"
-            ></ion-icon>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="sobre">
+        <!-- <div id="sobre">
       <div class="container">
         <div class="apresentation">
           <div class="menu">
@@ -227,9 +232,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <script src="/assets/scripts/switch-theme.js"></script>
-    <script src="/assets/scripts/loadLink.js"></script>
-    <script src="/assets/scripts/menuAbout.js"></script>
-  </body>
+    </div> -->
+        <div class="container-internal my-16 flex flex-col gap-8">
+            <h2 class="text-2xl col-span-12">Habilidades</h2>
+            <div class="px-16 flex flex-col gap-6" id="abilities"></div>
+        </div>
+
+        <script src="/assets/scripts/switch-theme.js"></script>
+        <script src="/assets/scripts/loadLink.js"></script>
+        <script src="/assets/scripts/menuAbout.js"></script>
+    </body>
 </html>

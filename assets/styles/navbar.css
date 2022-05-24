@@ -10,13 +10,6 @@ nav {
   z-index: 100;
 }
 
-nav .container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 nav ul {
   margin: 0;
   padding: 0;

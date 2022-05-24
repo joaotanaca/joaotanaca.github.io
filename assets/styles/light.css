@@ -5,5 +5,5 @@
   --text: #0c0c0c;
   --primary: #1565c0;
   --secondary: #5e92f3;
-  --shadow: -25px 25px 50px #e3e3e3, 25px -25px 50px #ffffff;
+  --shadow: #e3e3e3 0px 10px 36px 0px, #ffffff 0px 0px 0px 1px;
 }
