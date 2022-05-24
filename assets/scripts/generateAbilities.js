@@ -9,18 +9,20 @@ const abilities = [
     { name: "Javascript", level: "advanced" },
     { name: "HTML", level: "advanced" },
     { name: "CSS", level: "advanced" },
-    { name: "Sass", level: "advanced" },
-    { name: "Less", level: "advanced" },
     { name: "React", level: "advanced" },
-    { name: "React Native", level: "regular" },
     { name: "Vue", level: "regular" },
+    { name: "Next.js", level: "advanced" },
+    { name: "HTML", level: "advanced" },
     { name: "Angular", level: "regular" },
     { name: "NestJS", level: "beginner" },
-    { name: "Next.js", level: "advanced" },
+    { name: "Sass", level: "advanced" },
+    { name: "Less", level: "advanced" },
+    { name: "React Native", level: "regular" },
 ];
 
 function Abilities() {
-    return abilities.map(({ name, level }) => (
+    const principalSkills = abilities.slice(0, 5);
+    const renderPrincipalSkills = principalSkills.map(({ name, level }) => (
         <div className="grid grid-cols-2 gap-4" key={name}>
             <div className="col-span-1">{name}</div>
             <div className="col-span-1 text-right capitalize">{level}</div>
@@ -34,14 +36,35 @@ function Abilities() {
                 >
                     <div
                         className={`${levels[level]} h-full absolute inset-0`}
-                        style={{ background: "var(--primary)" }}
+                        style={{
+                            background:
+                                "linear-gradient(270deg, var(--secondary), var(--primary))",
+                        }}
                     ></div>
                 </div>
             </div>
         </div>
     ));
+
+    return <>{renderPrincipalSkills}</>;
+}
+
+function MoreAbilities() {
+    const secundarySkills = abilities.slice(5);
+
+    const renderSecundarySkills = secundarySkills.map(({ name }) => (
+        <li className="list-disc" key={name}>
+            {name}
+        </li>
+    ));
+    return <>{renderSecundarySkills}</>;
 }
 
 const container = document.getElementById("abilities");
+const containerMoreAbilities = document.getElementById("more_abilities");
+
 const root = ReactDOM.createRoot(container);
 root.render(<Abilities />);
+
+const more_abilities = ReactDOM.createRoot(containerMoreAbilities);
+more_abilities.render(<MoreAbilities />);
